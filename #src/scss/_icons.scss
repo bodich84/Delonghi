@@ -14,7 +14,7 @@
     background-image: url(../img/icons/phone.svg);
   }
   &-compare {
-    background-image: url(../img/icons/compare.svg);
+    background-image: url(../img/icons/compare-sm.svg);
   }
   &-compare-w {
     background-image: url(../img/icons/compare-w.svg);
@@ -54,5 +54,28 @@
   }
   &-gift {
     background-image: url(../img/icons/gift.svg);
+  }
+}
+
+@media (max-width: 576px) {
+  .icon {
+    &-catalog-sm {
+      background-image: url(../img/icons/catalog-sm.svg);
+    }
+    &-search-sm {
+      background-image: url(../img/icons/search-sm.svg);
+    }
+    &-compare-sm {
+      background-image: url(../img/icons/compare-sm.svg);
+    }
+    &-bag-sm {
+      background-image: url(../img/icons/bag-sm.svg);
+    }
+    &-user-sm {
+      background-image: url(../img/icons/user-sm.svg);
+    }
+    &-burger-sm {
+      background-image: url(../img/icons/burger-sm.svg);
+    }
   }
 }

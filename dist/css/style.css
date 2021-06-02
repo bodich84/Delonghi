@@ -177,7 +177,7 @@ body {
 }
 
 .icon-compare {
-  background-image: url(../img/icons/compare.svg);
+  background-image: url(../img/icons/compare-sm.svg);
 }
 
 .icon-compare-w,
@@ -329,6 +329,11 @@ body {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
+}
+
+.menu .app-panel__phone {
+  display: none;
+  margin: 0 15px;
 }
 
 .menu__close {
@@ -694,6 +699,30 @@ body {
     margin-bottom: 30px;
   }
 
+  .icon-catalog-sm {
+    background-image: url(../img/icons/catalog-sm.svg);
+  }
+
+  .icon-search-sm {
+    background-image: url(../img/icons/search-sm.svg);
+  }
+
+  .icon-compare-sm {
+    background-image: url(../img/icons/compare-sm.svg);
+  }
+
+  .icon-bag-sm {
+    background-image: url(../img/icons/bag-sm.svg);
+  }
+
+  .icon-user-sm {
+    background-image: url(../img/icons/user-sm.svg);
+  }
+
+  .icon-burger-sm {
+    background-image: url(../img/icons/burger-sm.svg);
+  }
+
   .btn {
     padding: 2px;
   }
@@ -719,16 +748,10 @@ body {
     display: none;
   }
 
-  .app-panel .icon-catalog,
-  .app-panel .icon-search,
-  .app-panel .icon-phone,
-  .app-panel .icon-compare,
-  .app-panel .icon-bag,
-  .app-panel .icon-user,
-  .app-panel .icon-burger {
-    width: 22px;
-    height: 22px;
-    background-size: 22px;
+  .menu .app-panel__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .menu__close i {

@@ -12,6 +12,10 @@
   &--open {
     transform: none;
   }
+  .app-panel__phone {
+    display: none;
+    margin: 0 15px;
+  }
   &__close {
     cursor: pointer;
     position: fixed;
@@ -88,6 +92,9 @@
 
 @media (max-width: 576px) {
   .menu {
+    .app-panel__phone {
+      display: flex;
+    }
     &__close {
       i {
         width: 14px;
