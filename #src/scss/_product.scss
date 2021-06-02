@@ -1,0 +1,112 @@
+.product {
+  @extend .container;
+  margin-top: 30px;
+  &__inner {
+    @extend .list;
+  }
+  &__item {
+    @extend .item-block;
+  }
+  &__card {
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    border-radius: 12px;
+    background: #fff;
+  }
+  &__panel {
+    display: flex;
+  }
+  &__act {
+    height: 40px;
+    min-width: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    margin-right: 2px;
+    cursor: pointer;
+    span {
+      display: none;
+      margin-left: 6px;
+    }
+    &:hover {
+      background: $color_orange;
+      color: #fff;
+      span {
+        display: block;
+      }
+    }
+    &--like:hover i {
+      @extend .icon-like-w;
+    }
+    &--compare:hover i {
+      @extend .icon-compare-w;
+    }
+    &--active {
+      background: $color_orange;
+      &.product__act--like i {
+        @extend .icon-like-w;
+      }
+      &.product__act--compare i {
+        @extend .icon-compare-w;
+      }
+    }
+  }
+  &__info {
+    width: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &__info-item {
+    margin-bottom: 4px;
+    i {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__img {
+    text-align: center;
+  }
+  &__name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  &__old-price {
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 4px;
+    color: $color_gray;
+    text-decoration: line-through;
+  }
+  &__price {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  &__bonus {
+    font-size: 12px;
+    line-height: 17px;
+    color: $color_orange;
+    font-weight: bold;
+  }
+  &__cart {
+    background: $color_accent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      background: $color_orange;
+    }
+  }
+}

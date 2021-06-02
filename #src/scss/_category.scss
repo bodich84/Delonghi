@@ -1,0 +1,35 @@
+.category {
+  @extend .list;
+  &__item {
+    @extend .item-block;
+    height: 400px;
+    padding: 40px 0 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+  }
+  &__title {
+    padding: 0 20px;
+    font-size: 24px;
+    line-height: 29px;
+    min-height: 58px;
+  }
+  &__link {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: $color_accent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    transition: all 0.5s;
+    &:hover {
+      background-color: $color_orange;
+      cursor: pointer;
+    }
+    i {
+      margin: auto;
+    }
+  }
+}

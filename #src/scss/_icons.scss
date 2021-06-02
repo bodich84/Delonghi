@@ -1,0 +1,58 @@
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  &-catalog {
+    background-image: url(../img/icons/catalog.svg);
+  }
+  &-search {
+    background-image: url(../img/icons/search.svg);
+  }
+  &-phone {
+    background-image: url(../img/icons/phone.svg);
+  }
+  &-compare {
+    background-image: url(../img/icons/compare.svg);
+  }
+  &-compare-w {
+    background-image: url(../img/icons/compare-w.svg);
+  }
+  &-bag {
+    background-image: url(../img/icons/bag.svg);
+  }
+  &-bag-w {
+    background-image: url(../img/icons/bag-w.svg);
+  }
+  &-user {
+    background-image: url(../img/icons/user.svg);
+  }
+  &-burger {
+    background-image: url(../img/icons/burger.svg);
+  }
+  &-right-rows {
+    background-image: url(../img/icons/right-rows.svg);
+  }
+  &-close {
+    background-image: url(../img/icons/close.svg);
+  }
+  &-like {
+    background-image: url(../img/icons/like.svg);
+  }
+  &-like-w {
+    background-image: url(../img/icons/like-w.svg);
+  }
+  &-popular {
+    background-image: url(../img/icons/popular.svg);
+  }
+  &-sale {
+    background-image: url(../img/icons/sale.svg);
+  }
+  &-app {
+    background-image: url(../img/icons/app.svg);
+  }
+  &-gift {
+    background-image: url(../img/icons/gift.svg);
+  }
+}
