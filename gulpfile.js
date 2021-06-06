@@ -8,8 +8,8 @@ import group_media from 'gulp-group-css-media-queries';
 import rename from 'gulp-rename';
 import del from 'del';
 
-const source_folder = "src";  // Source folder.
 const project_folder = "dist"; // Production folder.
+const source_folder = "src";  // Source folder.
 
 const path = {
   build: {
