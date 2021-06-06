@@ -1,13 +1,30 @@
 .app-panel {
-  padding: 20px 0;
-  &__inner {
-    @extend .container;
+  &__item {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: $color_dark;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    &:hover {
+      background: $color_accent;
+      color: #fff;
+      .icon {
+        fill: #fff;
+      }
+    }
   }
+  padding: 20px 0;
+  display: flex;
   &__logo {
     display: flex;
     flex-shrink: 0;
-    width: 134px;
+    margin: auto;
   }
   &__logo-img {
     display: block;
@@ -26,6 +43,12 @@
   }
   &__catalog {
     margin-right: 48px;
+    span {
+      padding-right: 8px;
+    }
+  }
+  &__burger span {
+    padding-left: 8px;
   }
 }
 
@@ -73,6 +96,9 @@
     &__menu--right > * + * {
       margin-left: 10px;
     }
+    &__item {
+      padding: 2px;
+    }
     &__catalog {
       margin-right: 10px;
     }
@@ -84,4 +110,3 @@
     }
   }
 }
-

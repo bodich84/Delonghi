@@ -7,630 +7,1038 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Drafts</title>
+    <title>Delonghi</title>
   </head>
   <body>
-
-    <!-- @format -->
+    <header class="container">
+          <!-- @format -->
 
 <div class="app-panel">
-  <div class="app-panel__inner">
-    <div class="app-panel__logo">
+  <div class="app-panel__logo">
+    <a href="#">
       <img class="app-panel__logo-img" src="img/logo.svg" alt="" />
-    </div>
-    <div class="app-panel__menu app-panel__menu--left">
-      <div class="btn app-panel__catalog">
-        <i class="icon icon-catalog icon-catalog-sm"></i><span>Каталог</span>
-      </div>
-      <div class="btn app-panel__search app-panel__search-sm">
-        <i class="icon icon-search"></i>
-      </div>
-    </div>
-    <div class="app-panel__menu app-panel__menu--right">
-      <div class="btn app-panel__phone">
-        <i class="icon icon-phone"></i>
-      </div>
-      <div class="btn"><i class="icon icon-compare icon-compare-sm"></i></div>
-      <div class="btn"><i class="icon icon-bag icon-bag-sm"></i></div>
-      <div class="btn"><i class="icon icon-user icon-user-sm"></i></div>
-      <div class="btn app-panel__burger">
-        <span>Меню</span><i class="icon icon-burger icon-burger-sm"></i>
-      </div>
-    </div>
+    </a>
+  </div>
+
+  <div class="app-panel__menu app-panel__menu--left">
+    <a href="#" class="app-panel__item  app-panel__catalog">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#catalog"/>
+      </svg>
+      <span>Каталог</span>
+    </a>
+
+    <button class="app-panel__item">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#search"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="app-panel__menu app-panel__menu--right">
+    <a class="app-panel__item  app-panel__phone" href="tel:+38 (096) 000 00 00">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#phone"/>
+      </svg>
+    </a>
+
+    <a href="#" class="app-panel__item ">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#compare"/>
+      </svg>
+    </a>
+
+    <a href="#" class="app-panel__item ">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+
+    <a href="#" class="app-panel__item ">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#user"/>
+      </svg>
+    </a>
+    
+    <button class="app-panel__item app-panel__burger">
+      <span>Меню</span>
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#burger"/>
+      </svg>
+    </button>
   </div>
 </div>
 
+    </header>
 
     <hr class="line" />
 
     <!-- @format -->
 
-<div class="menu">
-  <div class="app-panel">
-    <div class="app-panel__inner">
-      <div class="app-panel__logo">
-        <img class="app-panel__logo-img" src="img/logo.svg" alt="" />
-      </div>
-      <div class="app-panel__menu app-panel__menu--left">
-        <div class="btn app-panel__phone">
-          <i class="icon icon-phone"></i>
-        </div>
-        <div class="btn app-panel__search">
-          <i class="icon icon-search"></i>
-        </div>
-      </div>
-      <div class="app-panel__menu app-panel__menu--right">
-        <div class="menu__close"><i class="icon icon-close"></i></div>
-      </div>
-    </div>
+<div class="modal">
+  <div class="container">
+    <!-- @format -->
+<div class="app-panel">
+  <div class="app-panel__logo">
+    <img class="app-panel__logo-img" src="img/logo.svg" alt="" />
   </div>
-  <div class="menu__inner">
-    <ul class="menu__items">
-      <li class="menu__item">
-        <span class="menu__title">Наши товары</span>
-      </li>
-      <li class="menu__item menu__item--coffee">
-        <span class="menu__link">Автоматические кофемашины</span>
-        <img class="menu__big-img" src="./img/cat/cat1.jpg" alt="" />
-      </li>
-      <li class="menu__item category-menu">
-        <span class="menu__link">Техника для кухни</span>
-        <img class="menu__big-img" src="./img/cat/cat2.jpg" alt="" />
-        <div class="menu__sub-menu"><!-- @format -->
+
+  <div class="app-panel__menu app-panel__menu--left">
+    <button class="app-panel__item  app-panel__phone" href="tel:+38 (096) 000 00 00">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#phone"/>
+      </svg>
+    </button>
+
+    <button class="app-panel__item">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#search"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="app-panel__menu app-panel__menu--right">
+    <button class="modal__close">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#close"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+  </div>
+
+  <hr class="line" />
+
+  <div class="container">
+    <div class="menu">
+  <ul class="menu__list">
+    <li class="menu__item">
+      <span class="menu__title">Наши товары</span>
+    </li>
+
+    <li class="menu__item menu__item--coffee">
+      <span class="menu__link">Автоматические кофемашины</span>
+      <img class="menu__big-img" src="img/cat/cat1.jpg" alt="" />
+    </li>
+
+    <li class="menu__item category-menu">
+      <span class="menu__link">Техника для кухни</span>
+      <img class="menu__big-img" src="img/cat/cat2.jpg" alt="" />
+      <div class="menu__sub-menu">
+        <div class="inner">
+          <!-- @format -->
 
 <div class="category">
-  <div class="category__item">
-    <div class="category__title">Капсульные кофемашины</div>
-    <div class="category__img">
-      <img src="./img/cat/photo1.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+  <div class="category__title">
+    Капсульные кофемашины
   </div>
-  <div class="category__item">
-    <div class="category__title">Кофемолки</div>
-    <div class="category__img">
-      <img src="./img/cat/photo2.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo1.png alt="" />
   </div>
-  <div class="category__item">
-    <div class="category__title">Кофеварки</div>
-    <div class="category__img">
-      <img src="./img/cat/photo3.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
-  </div>
-  <div class="category__item">
-    <div class="category__title">Грили</div>
-    <div class="category__img">
-      <img src="./img/cat/photo4.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
-  </div>
-  <div class="category__item">
-    <div class="category__title">Электрочайники и тостеры</div>
-    <div class="category__img">
-      <img src="./img/cat/photo5.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-      <li class="menu__item category-menu">
-        <span class="menu__link">Техника для дома</span>
-        <img class="menu__big-img" src="./img/cat/cat1.jpg" alt="" />
-        <div class="menu__sub-menu"><!-- @format -->
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
 
 <div class="category">
-  <div class="category__item">
-    <div class="category__title">Капсульные кофемашины</div>
-    <div class="category__img">
-      <img src="./img/cat/photo1.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+  <div class="category__title">
+    Кофемолки
   </div>
-  <div class="category__item">
-    <div class="category__title">Кофемолки</div>
-    <div class="category__img">
-      <img src="./img/cat/photo2.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo2.png alt="" />
   </div>
-  <div class="category__item">
-    <div class="category__title">Кофеварки</div>
-    <div class="category__img">
-      <img src="./img/cat/photo3.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
-  </div>
-  <div class="category__item">
-    <div class="category__title">Грили</div>
-    <div class="category__img">
-      <img src="./img/cat/photo4.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
-  </div>
-  <div class="category__item">
-    <div class="category__title">Электрочайники и тостеры</div>
-    <div class="category__img">
-      <img src="./img/cat/photo5.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-      <li class="menu__item category-menu">
-        <span class="menu__link">Аксессуары</span>
-        <img class="menu__big-img" src="./img/cat/cat2.jpg" alt="" />
-        <div class="menu__sub-menu"><!-- @format -->
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
 
 <div class="category">
-  <div class="category__item">
-    <div class="category__title">Капсульные кофемашины</div>
-    <div class="category__img">
-      <img src="./img/cat/photo1.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+  <div class="category__title">
+    Кофеварки
   </div>
-  <div class="category__item">
-    <div class="category__title">Кофемолки</div>
-    <div class="category__img">
-      <img src="./img/cat/photo2.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo3.png alt="" />
   </div>
-  <div class="category__item">
-    <div class="category__title">Кофеварки</div>
-    <div class="category__img">
-      <img src="./img/cat/photo3.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Грили
   </div>
-  <div class="category__item">
-    <div class="category__title">Грили</div>
-    <div class="category__img">
-      <img src="./img/cat/photo4.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo4.png alt="" />
   </div>
-  <div class="category__item">
-    <div class="category__title">Электрочайники и тостеры</div>
-    <div class="category__img">
-      <img src="./img/cat/photo5.png" alt="" />
-    </div>
-    <div class="category__link">
-      <i class="icon icon-right-rows"></i>
-    </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Электрочайники и тостеры
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo5.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div>
+        </div>
+      </div>
+    </li>
+
+    <li class="menu__item category-menu">
+      <span class="menu__link">Техника для дома</span>
+      <img class="menu__big-img" src="img/cat/cat1.jpg" alt="" />
+      <div class="menu__sub-menu">
+        <div class="inner">
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Капсульные кофемашины
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo1.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Кофемолки
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo2.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Кофеварки
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo3.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Грили
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo4.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Электрочайники и тостеры
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo5.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div>
+        </div>
+      </div>
+    </li>
+
+    <li class="menu__item category-menu">
+      <span class="menu__link">Аксессуары</span>
+      <img class="menu__big-img" src="img/cat/cat2.jpg" alt="" />
+      <div class="menu__sub-menu">
+        <div class="inner">
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Капсульные кофемашины
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo1.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Кофемолки
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo2.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Кофеварки
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo3.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Грили
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo4.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div> 
+          <!-- @format -->
+
+<div class="category">
+  <div class="category__title">
+    Электрочайники и тостеры
+  </div>
+
+  <div class="category__img">
+    <img src=img/cat/photo5.png alt="" />
+  </div>
+ 
+  <a href="#" class="category__link btn">
+    <svg class="icon--sm">
+      <use xlink:href="img/icons.svg#right"/>
+    </svg>
+  </a>
+</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="menu__list">
+    <li class="menu__item">
+      <span class="menu__title">Мир De’Longhi</span>
+    </li>
+
+    <li class="menu__item">
+      <span class="menu__link">Мир De’Longhi</span>
+    </li>
+  </ul>
+
+  <ul class="menu__list">
+    <li class="menu__item">
+      <span class="menu__title"> Поддержка и дополнительная информация </span>
+    </li>
+
+    <li class="menu__item">
+      <span class="menu__link">Telegram-бот</span>
+    </li>
+
+    <li class="menu__item"><span class="menu__link">Поддержка</span></li>
+
+    <li class="menu__item">
+      <span class="menu__link">Сервисные центры</span>
+    </li>
+  </ul>
+
+  <ul class="menu__list">
+    <li class="menu__item">
+      <span class="menu__title">Политика конфиденциальности</span>
+    </li>
+
+    <li class="menu__item">
+      <span class="menu__link">Политика конфиденциальности</span>
+    </li>
+
+    <li class="menu__item">
+      <span class="menu__link">Политика использования “Cookies”</span>
+    </li>
+  </ul>
+</div>
+
   </div>
 </div>
-</div>
-      </li>
-    </ul>
 
-    <ul class="menu__items">
-      <li class="menu__item">
-        <span class="menu__title">Мир De’Longhi</span>
-      </li>
-      <li class="menu__item">
-        <span class="menu__link">Мир De’Longhi</span>
-      </li>
-    </ul>
+    
+    <main class="container">
+      <div class="inner">
+        <!-- @format -->
 
-    <ul class="menu__items">
-      <li class="menu__item">
-        <span class="menu__title"> Поддержка и дополнительная информация </span>
-      </li>
-      <li class="menu__item">
-        <span class="menu__link">Telegram-бот</span>
-      </li>
-      <li class="menu__item"><span class="menu__link">Поддержка</span></li>
-      <li class="menu__item">
-        <span class="menu__link">Сервисные центры</span>
-      </li>
-    </ul>
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
 
-    <ul class="menu__items">
-      <li class="menu__item">
-        <span class="menu__title">Политика конфиденциальности</span>
-      </li>
-      <li class="menu__item">
-        <span class="menu__link">Политика конфиденциальности</span>
-      </li>
-      <li class="menu__item">
-        <span class="menu__link">Политика использования “Cookies”</span>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-    <div class="product">
-      <div class="product__inner">
-
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="product__card">
-            <div class="product__panel">
-              <div class="product__act product__act--like">
-                <i class="icon icon-like"></i><span>Сравнить</span>
-              </div>
-              <div class="product__act product__act--compare">
-                <i class="icon icon-compare"></i><span>В избранное</span>
-              </div>
-            </div>
-            <div class="product__img">
-              <img src="./img/prod/product1.png" alt="" />
-            </div>
-            <div class="product__info">
-              <div class="product__info-item">
-                <i class="icon icon-popular"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-sale"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-app"></i>
-              </div>
-              <div class="product__info-item">
-                <i class="icon icon-gift"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product__name">
-            De'Longhi рожковая кофеварка ECP33.21.BK
-          </div>
-          <div class="product__price-panel">
-            <div class="product__old-price">35 999 ₽</div>
-            <div class="product__price">129 990 ₽</div>
-            <div class="product__bonus">+200 бонусов</div>
-            <div class="product__cart"><i class="icon icon-bag-w"></i></div>
-          </div>
-        </div>
-
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
       </div>
     </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- @format -->
+
+<div class="product">
+  <div class="product__card">
+    <div class="product__panel">
+      <div class="product__act product__act--like">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#like"/>
+        </svg>
+        <span>Сравнить</span>
+      </div>
+
+      <div class="product__act product__act--compare">
+        <svg class="icon icon--sm">
+          <use xlink:href="img/icons.svg#compare"/>
+        </svg>
+        <span>В избранное</span>
+      </div>
+    </div>
+    
+    <div class="product__img">
+      <img src="img/prod/product1.png" alt="" />
+    </div>
+
+    <div class="product__info">
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#popular"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#sale"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#app"/>
+        </svg>
+      </div>
+
+      <div class="product__info-item">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#gift"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__name">De'Longhi рожковая кофеварка ECP33.21.BK</div>
+  <div class="product__price-panel">
+    <div class="product__old-price">35 999 ₽</div>
+    <div class="product__price">129 990 ₽</div>
+    <div class="product__bonus">+200 бонусов</div>
+    
+    <a href="#" class="product__cart">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#bag"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+      </div>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>

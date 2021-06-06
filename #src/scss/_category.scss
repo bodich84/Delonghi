@@ -1,13 +1,10 @@
 .category {
-  @extend .list;
-  &__item {
-    @extend .item-block;
-    height: 400px;
-    padding: 40px 0 20px;
-    text-align: center;
-    background: #fff;
-    border-radius: 12px;
-  }
+  @extend .item-block;
+  height: 400px;
+  padding: 40px 0 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
   &__title {
     padding: 0 20px;
     font-size: 24px;

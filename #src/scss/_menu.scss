@@ -1,33 +1,5 @@
 .menu {
-  position: fixed;
-  overflow-y: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  transform: translateX(-100%);
-  transition: all 0.5s;
-  background: $color_bg;
-  &--open {
-    transform: none;
-  }
-  .app-panel__phone {
-    display: none;
-    margin: 0 15px;
-  }
-  &__close {
-    cursor: pointer;
-    position: fixed;
-    top: 28px;
-    right: 38px;
-    i {
-      width: 26px;
-      height: 26px;
-    }
-  }
   &__inner {
-    @extend .container;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,15 +40,6 @@
 
 @media (max-width: 992px) {
   .menu {
-    &__close {
-      position: relative;
-      top: 0;
-      right: 0;
-      i {
-        width: 16px;
-        height: 16px;
-      }
-    }
     &__link {
       font-size: 22px;
       line-height: 27px;
@@ -86,20 +49,6 @@
     }
     &__big-img {
       display: none;
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .menu {
-    .app-panel__phone {
-      display: flex;
-    }
-    &__close {
-      i {
-        width: 14px;
-        height: 14px;
-      }
     }
   }
 }

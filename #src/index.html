@@ -7,31 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Drafts</title>
+    <title>Delonghi</title>
   </head>
   <body>
-
-    @@include('./html/app-panel.html')
+    <header class="container">
+          @@include('html/_app-panel.html')
+    </header>
 
     <hr class="line" />
 
-    @@include('./html/menu.html')
-
-    <div class="product">
-      <div class="product__inner">
-
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-        @@include('./html/product__item.html')
-
+    @@include('html/_modal.html')
+    
+    <main class="container">
+      <div class="inner">
+        @@include('html/_product.html')
+        @@include('html/_product.html')
+        @@include('html/_product.html')
+        @@include('html/_product.html')
+        @@include('html/_product.html')
+        @@include('html/_product.html')
+        @@include('html/_product.html')
+        @@include('html/_product.html')
+        @@include('html/_product.html')
       </div>
-    </div>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>

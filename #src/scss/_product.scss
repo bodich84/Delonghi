@@ -1,12 +1,5 @@
 .product {
-  @extend .container;
-  margin-top: 30px;
-  &__inner {
-    @extend .list;
-  }
-  &__item {
-    @extend .item-block;
-  }
+  @extend .item-block;
   &__card {
     height: 300px;
     padding: 20px;
@@ -19,17 +12,20 @@
   }
   &__act {
     height: 40px;
-    min-width: 40px;
+    min-width: 32px;
+    padding: 0 4px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 8px;
     margin-right: 2px;
     cursor: pointer;
+    svg {
+      margin: 4px;
+    }
     span {
       display: none;
-      margin-left: 6px;
+      margin-right: 14px;
     }
     &:hover {
       background: $color_orange;
@@ -38,19 +34,13 @@
         display: block;
       }
     }
-    &--like:hover i {
-      @extend .icon-like-w;
-    }
-    &--compare:hover i {
-      @extend .icon-compare-w;
+    &:hover svg {
+      fill: #fff;
     }
     &--active {
       background: $color_orange;
-      &.product__act--like i {
-        @extend .icon-like-w;
-      }
-      &.product__act--compare i {
-        @extend .icon-compare-w;
+      svg {
+        fill: #fff;
       }
     }
   }
@@ -61,10 +51,8 @@
     right: 20px;
   }
   &__info-item {
-    margin-bottom: 4px;
-    i {
-      width: 32px;
-      height: 32px;
+    svg {
+      fill: $color_orange;
     }
   }
   &__img {
@@ -103,8 +91,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     transition: all 0.5s;
+    svg {
+      fill: #fff;
+    }
     &:hover {
       background: $color_orange;
     }

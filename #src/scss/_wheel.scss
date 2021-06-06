@@ -1,0 +1,25 @@
+.wheel-block {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+}
+.wheel {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../img/wheel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 3s;
+}
+.wheel-inner {
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  top: 132px;
+  left: 132px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(../img/wheel-inner.png);
+}

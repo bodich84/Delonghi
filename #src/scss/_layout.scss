@@ -8,12 +8,6 @@ body {
   min-width: 360px;
 }
 
-.container {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: auto;
-}
-
 .line {
   display: none;
   margin: 0;
@@ -21,7 +15,17 @@ body {
   border-bottom: 1px solid $color_light-gray;
 }
 
-.list {
+main {
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.inner {
   display: flex;
   flex-wrap: wrap;
   width: auto;

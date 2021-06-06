@@ -1,13 +1,13 @@
 // open menu
 
 $('.app-panel__burger, .app-panel__catalog').on('click', function () {
-  $('.menu').addClass('menu--open')
-  $('body').css('overflow' , 'hidden')
+  $('.modal').addClass('modal--open')
+  $('body').css('overflow', 'hidden')
 })
 
 // close menu
-$('.menu__close, .menu__item--coffee').on('click', function () {
-  $('.menu').removeClass('menu--open')
+$('.modal__close').on('click', function () {
+  $('.modal').removeClass('modal--open')
   $('body').css('overflow', 'inherit')
 })
 
@@ -25,3 +25,15 @@ $('.product__act').on('click', function () {
 })
 
 
+// wheel
+const selectCell = () => {
+  let cell = 7
+  let number = Math.floor(Math.random() * (cell) + 1)
+  let deg = 360 / cell * number
+  let run = 1080 + deg
+  $('.wheel').css('transform', `rotateZ(${run}deg)`)
+  $('.wheel-inner').off()
+  return number
+}
+
+$('.wheel-inner').on('click', selectCell)
